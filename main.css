@@ -30,7 +30,7 @@ body {
   background-color: var(--ink);
   background-image:
     linear-gradient(rgba(10,10,10,0.93), rgba(10,10,10,0.93)),
-    url("https://images.unsplash.com/photo-1574202774336-44faebb2dce1?q=80&w=1600&auto=format&fit=crop");
+    url("images/flag.svg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1235 650" preserveAspectRatio="xMidYMid slice">
+  <!-- 13 stripes: alternating dark gray and light gray -->
+  <rect width="1235" height="650" fill="#e8e8e8"/>
+  <rect y="0"   width="1235" height="50" fill="#2a2a2a"/>
+  <rect y="100" width="1235" height="50" fill="#2a2a2a"/>
+  <rect y="200" width="1235" height="50" fill="#2a2a2a"/>
+  <rect y="300" width="1235" height="50" fill="#2a2a2a"/>
+  <rect y="400" width="1235" height="50" fill="#2a2a2a"/>
+  <rect y="500" width="1235" height="50" fill="#2a2a2a"/>
+  <rect y="600" width="1235" height="50" fill="#2a2a2a"/>
+  <!-- Canton (union box) -->
+  <rect width="494" height="350" fill="#1a1a1a"/>
+  <!-- 50 stars in 5x4 + 4x5 pattern, simplified as small circles -->
+  <!-- Row 1 -->
+  <circle cx="41"  cy="29"  r="9" fill="#e8e8e8"/>
+  <circle cx="123" cy="29"  r="9" fill="#e8e8e8"/>
+  <circle cx="205" cy="29"  r="9" fill="#e8e8e8"/>
+  <circle cx="287" cy="29"  r="9" fill="#e8e8e8"/>
+  <circle cx="369" cy="29"  r="9" fill="#e8e8e8"/>
+  <circle cx="451" cy="29"  r="9" fill="#e8e8e8"/>
+  <!-- Row 2 (offset) -->
+  <circle cx="82"  cy="70"  r="9" fill="#e8e8e8"/>
+  <circle cx="164" cy="70"  r="9" fill="#e8e8e8"/>
+  <circle cx="246" cy="70"  r="9" fill="#e8e8e8"/>
+  <circle cx="328" cy="70"  r="9" fill="#e8e8e8"/>
+  <circle cx="410" cy="70"  r="9" fill="#e8e8e8"/>
+  <!-- Row 3 -->
+  <circle cx="41"  cy="111" r="9" fill="#e8e8e8"/>
+  <circle cx="123" cy="111" r="9" fill="#e8e8e8"/>
+  <circle cx="205" cy="111" r="9" fill="#e8e8e8"/>
+  <circle cx="287" cy="111" r="9" fill="#e8e8e8"/>
+  <circle cx="369" cy="111" r="9" fill="#e8e8e8"/>
+  <circle cx="451" cy="111" r="9" fill="#e8e8e8"/>
+  <!-- Row 4 (offset) -->
+  <circle cx="82"  cy="152" r="9" fill="#e8e8e8"/>
+  <circle cx="164" cy="152" r="9" fill="#e8e8e8"/>
+  <circle cx="246" cy="152" r="9" fill="#e8e8e8"/>
+  <circle cx="328" cy="152" r="9" fill="#e8e8e8"/>
+  <circle cx="410" cy="152" r="9" fill="#e8e8e8"/>
+  <!-- Row 5 -->
+  <circle cx="41"  cy="193" r="9" fill="#e8e8e8"/>
+  <circle cx="123" cy="193" r="9" fill="#e8e8e8"/>
+  <circle cx="205" cy="193" r="9" fill="#e8e8e8"/>
+  <circle cx="287" cy="193" r="9" fill="#e8e8e8"/>
+  <circle cx="369" cy="193" r="9" fill="#e8e8e8"/>
+  <circle cx="451" cy="193" r="9" fill="#e8e8e8"/>
+  <!-- Row 6 (offset) -->
+  <circle cx="82"  cy="234" r="9" fill="#e8e8e8"/>
+  <circle cx="164" cy="234" r="9" fill="#e8e8e8"/>
+  <circle cx="246" cy="234" r="9" fill="#e8e8e8"/>
+  <circle cx="328" cy="234" r="9" fill="#e8e8e8"/>
+  <circle cx="410" cy="234" r="9" fill="#e8e8e8"/>
+  <!-- Row 7 -->
+  <circle cx="41"  cy="275" r="9" fill="#e8e8e8"/>
+  <circle cx="123" cy="275" r="9" fill="#e8e8e8"/>
+  <circle cx="205" cy="275" r="9" fill="#e8e8e8"/>
+  <circle cx="287" cy="275" r="9" fill="#e8e8e8"/>
+  <circle cx="369" cy="275" r="9" fill="#e8e8e8"/>
+  <circle cx="451" cy="275" r="9" fill="#e8e8e8"/>
+  <!-- Row 8 (offset) -->
+  <circle cx="82"  cy="316" r="9" fill="#e8e8e8"/>
+  <circle cx="164" cy="316" r="9" fill="#e8e8e8"/>
+  <circle cx="246" cy="316" r="9" fill="#e8e8e8"/>
+  <circle cx="328" cy="316" r="9" fill="#e8e8e8"/>
+  <circle cx="410" cy="316" r="9" fill="#e8e8e8"/>
+  <!-- Row 9 -->
+  <circle cx="41"  cy="321" r="9" fill="#e8e8e8"/>
+  <circle cx="123" cy="321" r="9" fill="#e8e8e8"/>
+  <circle cx="205" cy="321" r="9" fill="#e8e8e8"/>
+  <circle cx="287" cy="321" r="9" fill="#e8e8e8"/>
+  <circle cx="369" cy="321" r="9" fill="#e8e8e8"/>
+  <circle cx="451" cy="321" r="9" fill="#e8e8e8"/>
+</svg>

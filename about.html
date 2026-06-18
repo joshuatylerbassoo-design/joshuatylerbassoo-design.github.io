@@ -1,160 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <base href="https://joshuatylerbassoo-design.github.io/">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Joshua Bassoo</title>
-  <meta name="description" content="The principles and convictions of Joshua Bassoo.">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Joshua Bassoo</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0a0a0a;
+  --panel: #141312;
+  --marble: #f5f3ee;
+  --stone: #8a8378;
+  --stone-dim: #5c5750;
+  --bronze: #b08d57;
+  --bronze-light: #d4b483;
+  --hairline: rgba(176, 141, 87, 0.35);
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--ink);
+  background-image: linear-gradient(rgba(10,10,10,0.91), rgba(10,10,10,0.91)), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjM1IDY1MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgogIDwhLS0gMTMgc3RyaXBlczogYWx0ZXJuYXRpbmcgZGFyayBncmF5IGFuZCBsaWdodCBncmF5IC0tPgogIDxyZWN0IHdpZHRoPSIxMjM1IiBoZWlnaHQ9IjY1MCIgZmlsbD0iI2U4ZThlOCIvPgogIDxyZWN0IHk9IjAiICAgd2lkdGg9IjEyMzUiIGhlaWdodD0iNTAiIGZpbGw9IiMyYTJhMmEiLz4KICA8cmVjdCB5PSIxMDAiIHdpZHRoPSIxMjM1IiBoZWlnaHQ9IjUwIiBmaWxsPSIjMmEyYTJhIi8+CiAgPHJlY3QgeT0iMjAwIiB3aWR0aD0iMTIzNSIgaGVpZ2h0PSI1MCIgZmlsbD0iIzJhMmEyYSIvPgogIDxyZWN0IHk9IjMwMCIgd2lkdGg9IjEyMzUiIGhlaWdodD0iNTAiIGZpbGw9IiMyYTJhMmEiLz4KICA8cmVjdCB5PSI0MDAiIHdpZHRoPSIxMjM1IiBoZWlnaHQ9IjUwIiBmaWxsPSIjMmEyYTJhIi8+CiAgPHJlY3QgeT0iNTAwIiB3aWR0aD0iMTIzNSIgaGVpZ2h0PSI1MCIgZmlsbD0iIzJhMmEyYSIvPgogIDxyZWN0IHk9IjYwMCIgd2lkdGg9IjEyMzUiIGhlaWdodD0iNTAiIGZpbGw9IiMyYTJhMmEiLz4KICA8IS0tIENhbnRvbiAodW5pb24gYm94KSAtLT4KICA8cmVjdCB3aWR0aD0iNDk0IiBoZWlnaHQ9IjM1MCIgZmlsbD0iIzFhMWExYSIvPgogIDwhLS0gNTAgc3RhcnMgaW4gNXg0ICsgNHg1IHBhdHRlcm4sIHNpbXBsaWZpZWQgYXMgc21hbGwgY2lyY2xlcyAtLT4KICA8IS0tIFJvdyAxIC0tPgogIDxjaXJjbGUgY3g9IjQxIiAgY3k9IjI5IiAgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjEyMyIgY3k9IjI5IiAgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjIwNSIgY3k9IjI5IiAgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjI4NyIgY3k9IjI5IiAgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjM2OSIgY3k9IjI5IiAgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjQ1MSIgY3k9IjI5IiAgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDwhLS0gUm93IDIgKG9mZnNldCkgLS0+CiAgPGNpcmNsZSBjeD0iODIiICBjeT0iNzAiICByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMTY0IiBjeT0iNzAiICByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMjQ2IiBjeT0iNzAiICByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMzI4IiBjeT0iNzAiICByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iNDEwIiBjeT0iNzAiICByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPCEtLSBSb3cgMyAtLT4KICA8Y2lyY2xlIGN4PSI0MSIgIGN5PSIxMTEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIxMjMiIGN5PSIxMTEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIyMDUiIGN5PSIxMTEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIyODciIGN5PSIxMTEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIzNjkiIGN5PSIxMTEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSI0NTEiIGN5PSIxMTEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8IS0tIFJvdyA0IChvZmZzZXQpIC0tPgogIDxjaXJjbGUgY3g9IjgyIiAgY3k9IjE1MiIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjE2NCIgY3k9IjE1MiIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjI0NiIgY3k9IjE1MiIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjMyOCIgY3k9IjE1MiIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjQxMCIgY3k9IjE1MiIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDwhLS0gUm93IDUgLS0+CiAgPGNpcmNsZSBjeD0iNDEiICBjeT0iMTkzIiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMTIzIiBjeT0iMTkzIiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMjA1IiBjeT0iMTkzIiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMjg3IiBjeT0iMTkzIiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMzY5IiBjeT0iMTkzIiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iNDUxIiBjeT0iMTkzIiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPCEtLSBSb3cgNiAob2Zmc2V0KSAtLT4KICA8Y2lyY2xlIGN4PSI4MiIgIGN5PSIyMzQiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIxNjQiIGN5PSIyMzQiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIyNDYiIGN5PSIyMzQiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIzMjgiIGN5PSIyMzQiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSI0MTAiIGN5PSIyMzQiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8IS0tIFJvdyA3IC0tPgogIDxjaXJjbGUgY3g9IjQxIiAgY3k9IjI3NSIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjEyMyIgY3k9IjI3NSIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjIwNSIgY3k9IjI3NSIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjI4NyIgY3k9IjI3NSIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjM2OSIgY3k9IjI3NSIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDxjaXJjbGUgY3g9IjQ1MSIgY3k9IjI3NSIgcj0iOSIgZmlsbD0iI2U4ZThlOCIvPgogIDwhLS0gUm93IDggKG9mZnNldCkgLS0+CiAgPGNpcmNsZSBjeD0iODIiICBjeT0iMzE2IiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMTY0IiBjeT0iMzE2IiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMjQ2IiBjeT0iMzE2IiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iMzI4IiBjeT0iMzE2IiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPGNpcmNsZSBjeD0iNDEwIiBjeT0iMzE2IiByPSI5IiBmaWxsPSIjZThlOGU4Ii8+CiAgPCEtLSBSb3cgOSAtLT4KICA8Y2lyY2xlIGN4PSI0MSIgIGN5PSIzMjEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIxMjMiIGN5PSIzMjEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIyMDUiIGN5PSIzMjEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIyODciIGN5PSIzMjEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSIzNjkiIGN5PSIzMjEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KICA8Y2lyY2xlIGN4PSI0NTEiIGN5PSIzMjEiIHI9IjkiIGZpbGw9IiNlOGU4ZTgiLz4KPC9zdmc+Cg==");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--marble);
+  font-family: var(--font-body);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+}
+a { color: var(--bronze-light); text-decoration: none; transition: color .25s; }
+a:hover, a:focus { color: var(--marble); }
+::selection { background: var(--bronze); color: var(--ink); }
+.eyebrow { font-family: var(--font-body); font-size: .72rem; letter-spacing: .32em; text-transform: uppercase; color: var(--bronze); margin-bottom: .75rem; display: inline-block; }
+.display-heading { font-family: var(--font-display); font-weight: 500; letter-spacing: .01em; color: var(--marble); }
+.display-heading em { color: var(--bronze-light); font-style: italic; }
+.hairline { border: none; border-top: 1px solid var(--hairline); width: 64px; margin: 1.5rem auto; }
+.hairline.left { margin: 1.5rem 0; }
+.navbar-stoic { background-color: rgba(10,10,10,0.92); backdrop-filter: blur(6px); border-bottom: 1px solid var(--hairline); padding-top: 1.1rem; padding-bottom: 1.1rem; }
+.navbar-stoic .navbar-brand { font-family: var(--font-display); font-size: 1.4rem; letter-spacing: .08em; color: var(--marble) !important; }
+.navbar-stoic .navbar-brand .brand-mark { color: var(--bronze); }
+.navbar-stoic .nav-link { font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: var(--stone) !important; padding: .5rem 1.1rem !important; }
+.navbar-stoic .nav-link:hover, .navbar-stoic .nav-link.active { color: var(--marble) !important; }
+.navbar-stoic .navbar-toggler { border-color: var(--hairline); }
+.hero-stage { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 7rem 1.5rem 4rem; position: relative; overflow: hidden; }
+.hero-stage::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 38%, rgba(176,141,87,.10), transparent 55%); pointer-events: none; }
+.medallion-wrap { position: relative; width: min(420px,78vw); height: min(420px,78vw); margin: 0 auto; }
+.medallion-orbit-text { position: absolute; inset: -54px; animation: spin-slow 60s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .medallion-orbit-text { animation: none; } }
+@keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.medallion-orbit-text text { font-family: var(--font-body); font-size: 11.5px; letter-spacing: .34em; fill: var(--stone); text-transform: uppercase; }
+.medallion-photo-ring { position: absolute; inset: 0; border-radius: 50%; border: 1px solid var(--hairline); padding: 14px; }
+.medallion-photo-ring img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; filter: grayscale(100%) contrast(1.08); border: 1px solid var(--hairline); }
+.hero-name { text-align: center; margin-top: 3rem; }
+.hero-name h1 { font-size: clamp(2.4rem,6vw,4rem); margin-bottom: .25rem; }
+.hero-name .role-line { color: var(--stone); font-size: .95rem; letter-spacing: .06em; }
+.scroll-cue { position: absolute; bottom: 2.2rem; left: 50%; transform: translateX(-50%); font-size: .68rem; letter-spacing: .3em; text-transform: uppercase; color: var(--stone-dim); }
+.section { padding: 6.5rem 0; border-bottom: 1px solid var(--hairline); }
+.section:last-of-type { border-bottom: none; }
+.section-alt { background-color: var(--panel); }
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 3.5rem; }
+.lede { color: var(--stone); font-size: 1.05rem; max-width: 640px; margin: 0 auto; }
+.plinth { position: relative; background-color: var(--panel); border: 1px solid var(--hairline); overflow: hidden; height: 100%; }
+.plinth-image { aspect-ratio: 4/5; overflow: hidden; }
+.plinth-image img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) contrast(1.05); transition: transform .8s ease, filter .8s ease; }
+.plinth:hover .plinth-image img { transform: scale(1.04); filter: grayscale(60%) contrast(1.05); }
+.plinth-caption { padding: 1.6rem 1.7rem 1.9rem; }
+.plinth-number { font-family: var(--font-display); color: var(--bronze); font-size: .85rem; letter-spacing: .1em; }
+.plinth-caption h3 { font-family: var(--font-display); font-size: 1.4rem; margin: .4rem 0 .6rem; color: var(--marble); }
+.plinth-caption p { color: var(--stone); font-size: .92rem; margin-bottom: 0; }
+.tenet-row { display: flex; gap: 1.6rem; padding: 1.8rem 0; border-top: 1px solid var(--hairline); align-items: baseline; }
+.tenet-row:last-child { border-bottom: 1px solid var(--hairline); }
+.tenet-mark { font-family: var(--font-display); font-size: 1.1rem; color: var(--bronze); min-width: 2.6rem; }
+.tenet-row h4 { font-family: var(--font-display); font-size: 1.25rem; color: var(--marble); margin-bottom: .35rem; }
+.tenet-row p { color: var(--stone); margin-bottom: 0; font-size: .95rem; }
+.quote-block { text-align: center; max-width: 760px; margin: 0 auto; }
+.quote-block blockquote { font-family: var(--font-display); font-style: italic; font-size: clamp(1.5rem,3vw,2.1rem); color: var(--marble); line-height: 1.5; }
+.quote-block cite { display: block; margin-top: 1.2rem; color: var(--stone); font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; font-style: normal; }
+.resume-shell { max-width: 880px; margin: 0 auto; }
+.resume-header { text-align: center; margin-bottom: 3.5rem; }
+.resume-block { margin-bottom: 3.2rem; }
+.resume-block-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.4rem; }
+.resume-block-head .eyebrow { margin-bottom: 0; }
+.resume-block-head::after { content: ""; flex: 1; height: 1px; background: var(--hairline); }
+.entry { display: grid; grid-template-columns: 160px 1fr; gap: 1.5rem; padding: 1.3rem 0; border-top: 1px solid rgba(255,255,255,.06); }
+.entry:first-child { border-top: none; }
+.entry-period { color: var(--bronze); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; padding-top: .2rem; }
+.entry-title { font-family: var(--font-display); font-size: 1.25rem; color: var(--marble); margin-bottom: .2rem; }
+.entry-org { color: var(--stone); font-size: .85rem; margin-bottom: .7rem; letter-spacing: .03em; }
+.entry ul { color: var(--stone); font-size: .92rem; padding-left: 1.1rem; margin-bottom: 0; }
+.entry ul li { margin-bottom: .35rem; }
+.entry ul li::marker { color: var(--bronze); }
+.skill-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(190px,1fr)); gap: .9rem; }
+.skill-chip { border: 1px solid var(--hairline); padding: .85rem 1.1rem; font-size: .85rem; color: var(--marble); letter-spacing: .02em; }
+.skill-chip strong { color: var(--bronze-light); display: block; font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; margin-bottom: .3rem; }
+@media (max-width: 576px) { .entry { grid-template-columns: 1fr; gap: .4rem; } }
+.footer-stoic { background-color: var(--ink); border-top: 1px solid var(--hairline); padding: 2.6rem 0; text-align: center; color: var(--stone-dim); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+.footer-stoic .footer-links a { color: var(--stone); margin: 0 .8rem; font-size: .72rem; }
+.btn-bronze { border: 1px solid var(--bronze); color: var(--bronze-light); background: transparent; font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; padding: .85rem 2rem; border-radius: 0; transition: all .3s; }
+.btn-bronze:hover { background-color: var(--bronze); color: var(--ink); }
+.container-narrow { max-width: 920px; margin-left: auto; margin-right: auto; }
+img { max-width: 100%; }
+</style>
 </head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar navbar-expand-lg navbar-stoic fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><span class="brand-mark">J.</span>BASSOO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="app/game.html">Game</a></li>
-        </ul>
-      </div>
+<body><nav class="navbar navbar-expand-lg navbar-stoic fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="brand-mark">J.</span>BASSOO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMain"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link " href="resume.html">Résumé</a></li>
+<li class="nav-item"><a class="nav-link " href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link " href="game.html">Game</a></li></ul></div>
+  </div>
+</nav>
+<header class="section" style="padding-top:9rem;">
+  <div class="container section-head">
+    <p class="eyebrow">Exhibit I</p>
+    <h1 class="display-heading" style="font-size:clamp(2rem,5vw,3.2rem);">A Few Things I Hold to Be True</h1>
+    <p class="lede mt-3">Not a biography — a short set of convictions, gathered the way a museum gathers its permanent collection. Each one earned, not borrowed.</p>
+  </div>
+</header>
+<section class="section section-alt">
+  <div class="container" style="max-width:920px;margin:auto;">
+    <div class="tenet-row"><span class="tenet-mark">I</span><div><h4>One Foot in Front of the Other</h4><p>Talent is common. Endurance is not. I have built every part of my life on the conviction that consistent, unglamorous effort outlasts and outperforms raw ability — every single time.</p></div></div>
+    <div class="tenet-row"><span class="tenet-mark">II</span><div><h4>Work as a Form of Worship</h4><p>I started working at fourteen, not out of necessity alone, but because I came to see labor itself as formative — a daily discipline that builds character long before it builds a résumé.</p></div></div>
+    <div class="tenet-row"><span class="tenet-mark">III</span><div><h4>Service Before Self</h4><p>Two years spent serving communities from Colorado Springs to Santos, Brazil, taught me that humility is not weakness — it is the price of admission to genuinely understanding another person's life.</p></div></div>
+    <div class="tenet-row"><span class="tenet-mark">IV</span><div><h4>The Traditional Man</h4><p>I believe in the quiet, unfashionable virtues — providing, protecting, showing up. I am drawn to the model of a man who leads his family not with volume, but with steadiness.</p></div></div>
+    <div class="tenet-row"><span class="tenet-mark">V</span><div><h4>Sharpened in Community</h4><p>I seek out people who share this mindset, because growth is rarely solitary. Iron sharpens iron — and I want to spend my life surrounded by people committed to bettering the world, one day at a time.</p></div></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="quote-block">
+      <blockquote>"My goal is simple: to bless the people around me with the same hard work that was given to me at an early age."</blockquote>
+      <cite>— Joshua Bassoo</cite>
     </div>
-  </nav>
-
-  <!-- ===== PAGE HEADER ===== -->
-  <header class="section" style="padding-top: 9rem;">
-    <div class="container section-head">
-      <p class="eyebrow">Exhibit I</p>
-      <h1 class="display-heading" style="font-size: clamp(2rem, 5vw, 3.2rem);">A Few Things I Hold to Be True</h1>
-      <p class="lede mt-3">
-        Not a biography — a short set of convictions, gathered the way a museum
-        gathers its permanent collection. Each one earned, not borrowed.
-      </p>
+  </div>
+</section>
+<footer class="footer-stoic">
+  <div class="container">
+    <div class="footer-links mb-2">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="resume.html">Résumé</a><a href="gallery.html">Gallery</a><a href="game.html">Game</a><a href="scratch.html">Scratch</a>
     </div>
-  </header>
-
-  <!-- ===== TENETS LIST ===== -->
-  <section class="section section-alt">
-    <div class="container container-narrow">
-
-      <div class="tenet-row">
-        <span class="tenet-mark">I</span>
-        <div>
-          <h4>One Foot in Front of the Other</h4>
-          <p>Talent is common. Endurance is not. I have built every part of my life on
-            the conviction that consistent, unglamorous effort outlasts and outperforms
-            raw ability — every single time.</p>
-        </div>
-      </div>
-
-      <div class="tenet-row">
-        <span class="tenet-mark">II</span>
-        <div>
-          <h4>Work as a Form of Worship</h4>
-          <p>I started working at fourteen, not out of necessity alone, but because I
-            came to see labor itself as formative — a daily discipline that builds
-            character long before it builds a résumé.</p>
-        </div>
-      </div>
-
-      <div class="tenet-row">
-        <span class="tenet-mark">III</span>
-        <div>
-          <h4>Service Before Self</h4>
-          <p>Two years spent serving communities from Colorado Springs to Santos,
-            Brazil, taught me that humility is not weakness — it is the price of
-            admission to genuinely understanding another person's life.</p>
-        </div>
-      </div>
-
-      <div class="tenet-row">
-        <span class="tenet-mark">IV</span>
-        <div>
-          <h4>The Traditional Man</h4>
-          <p>I believe in the quiet, unfashionable virtues — providing, protecting,
-            showing up. I am drawn to the model of a man who leads his family not
-            with volume, but with steadiness.</p>
-        </div>
-      </div>
-
-      <div class="tenet-row">
-        <span class="tenet-mark">V</span>
-        <div>
-          <h4>Sharpened in Community</h4>
-          <p>I seek out people who share this mindset, because growth is rarely
-            solitary. Iron sharpens iron — and I want to spend my life surrounded by
-            people committed to bettering the world, one day at a time.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== VISUAL INTERLUDE / QUOTE ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <div class="plinth">
-            <div class="plinth-image">
-              <img src="https://images.unsplash.com/photo-1760716190527-c36474a2dd2f?q=80&w=1200&auto=format&fit=crop" alt="A solitary figure walking a quiet mountain trail at dawn">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <p class="eyebrow">On Discipline</p>
-          <h2 class="display-heading mb-4" style="font-size: clamp(1.6rem, 3vw, 2.2rem);">
-            Hard work will beat talent every time talent doesn't work hard.
-          </h2>
-          <p class="lede" style="margin: 0;">
-            That sentence has quietly run underneath every job, every climb, every
-            mile of trail, and every act of service I've taken on since I was
-            fourteen years old. It's less a slogan than a compass.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CLOSING QUOTE BLOCK ===== -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="quote-block">
-        <blockquote>
-          "My goal is simple: to bless the people around me with the same hard
-          work that was given to me at an early age."
-        </blockquote>
-        <cite>— Joshua Bassoo</cite>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer-stoic">
-    <div class="container">
-      <div class="footer-links mb-2">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">Résumé</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="app/game.html">Game</a>
-      </div>
-      &copy; 2026 Joshua Bassoo
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    &copy; 2026 Joshua Bassoo
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

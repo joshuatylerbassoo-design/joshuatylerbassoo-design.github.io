@@ -1,0 +1,525 @@
+/* ============================================================
+   JOSHUA BASSOO — PROFESSIONAL SITE
+   A minimalist, gallery-inspired identity.
+   Palette: ink black / marble white / stone gray / antique bronze
+   ============================================================ */
+
+:root {
+  --ink: #0a0a0a;
+  --panel: #141312;
+  --marble: #f5f3ee;
+  --stone: #8a8378;
+  --stone-dim: #5c5750;
+  --bronze: #b08d57;
+  --bronze-light: #d4b483;
+  --hairline: rgba(176, 141, 87, 0.35);
+
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ink);
+  background-image:
+    linear-gradient(rgba(10,10,10,0.93), rgba(10,10,10,0.93)),
+    url("https://images.unsplash.com/photo-1574202774336-44faebb2dce1?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--marble);
+  font-family: var(--font-body);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--bronze-light);
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--marble);
+}
+
+::selection {
+  background: var(--bronze);
+  color: var(--ink);
+}
+
+/* ---------- Eyebrow / labels ---------- */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+/* ---------- Display headings ---------- */
+.display-heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--marble);
+}
+
+.display-heading em {
+  color: var(--bronze-light);
+  font-style: italic;
+}
+
+.hairline {
+  border: none;
+  border-top: 1px solid var(--hairline);
+  width: 64px;
+  margin: 1.5rem auto;
+}
+
+.hairline.left {
+  margin: 1.5rem 0;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-stoic {
+  background-color: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--hairline);
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+
+.navbar-stoic .navbar-brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  color: var(--marble) !important;
+}
+
+.navbar-stoic .navbar-brand .brand-mark {
+  color: var(--bronze);
+}
+
+.navbar-stoic .nav-link {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stone) !important;
+  padding: 0.5rem 1.1rem !important;
+}
+
+.navbar-stoic .nav-link:hover,
+.navbar-stoic .nav-link.active {
+  color: var(--marble) !important;
+}
+
+.navbar-stoic .navbar-toggler {
+  border-color: var(--hairline);
+}
+
+.navbar-stoic .navbar-toggler-icon {
+  filter: invert(1) sepia(1) saturate(2) hue-rotate(10deg);
+}
+
+/* ---------- Hero / Medallion (Home page) ---------- */
+.hero-stage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(176, 141, 87, 0.10), transparent 55%);
+  pointer-events: none;
+}
+
+.medallion-wrap {
+  position: relative;
+  width: min(420px, 78vw);
+  height: min(420px, 78vw);
+  margin: 0 auto;
+}
+
+.medallion-orbit-text {
+  position: absolute;
+  inset: -54px;
+  animation: spin-slow 60s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .medallion-orbit-text {
+    animation: none;
+  }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.medallion-orbit-text text {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  letter-spacing: 0.34em;
+  fill: var(--stone);
+  text-transform: uppercase;
+}
+
+.medallion-photo-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--hairline);
+  padding: 14px;
+}
+
+.medallion-photo-ring img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  filter: grayscale(100%) contrast(1.08);
+  border: 1px solid var(--hairline);
+}
+
+.hero-name {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.hero-name h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  margin-bottom: 0.25rem;
+}
+
+.hero-name .role-line {
+  color: var(--stone);
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.68rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--stone-dim);
+}
+
+/* ---------- Sections (general) ---------- */
+.section {
+  padding: 6.5rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section-alt {
+  background-color: var(--panel);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.lede {
+  color: var(--stone);
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ---------- Gallery plinth cards (About / Gallery pages) ---------- */
+.plinth {
+  position: relative;
+  background-color: var(--panel);
+  border: 1px solid var(--hairline);
+  overflow: hidden;
+  height: 100%;
+}
+
+.plinth-image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.plinth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.05);
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.plinth:hover .plinth-image img {
+  transform: scale(1.04);
+  filter: grayscale(60%) contrast(1.05);
+}
+
+.plinth-caption {
+  padding: 1.6rem 1.7rem 1.9rem;
+}
+
+.plinth-number {
+  font-family: var(--font-display);
+  color: var(--bronze);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.plinth-caption h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin: 0.4rem 0 0.6rem;
+  color: var(--marble);
+}
+
+.plinth-caption p {
+  color: var(--stone);
+  font-size: 0.92rem;
+  margin-bottom: 0;
+}
+
+/* ---------- Tenets list (About page) ---------- */
+.tenet-row {
+  display: flex;
+  gap: 1.6rem;
+  padding: 1.8rem 0;
+  border-top: 1px solid var(--hairline);
+  align-items: baseline;
+}
+
+.tenet-row:last-child {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.tenet-mark {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--bronze);
+  min-width: 2.6rem;
+}
+
+.tenet-row h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--marble);
+  margin-bottom: 0.35rem;
+}
+
+.tenet-row p {
+  color: var(--stone);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* ---------- Quote block ---------- */
+.quote-block {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.quote-block blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  color: var(--marble);
+  line-height: 1.5;
+}
+
+.quote-block cite {
+  display: block;
+  margin-top: 1.2rem;
+  color: var(--stone);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+/* ---------- Resume ---------- */
+.resume-shell {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.resume-block {
+  margin-bottom: 3.2rem;
+}
+
+.resume-block-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.resume-block-head .eyebrow {
+  margin-bottom: 0;
+}
+
+.resume-block-head::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--hairline);
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.5rem;
+  padding: 1.3rem 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.entry:first-child {
+  border-top: none;
+}
+
+.entry-period {
+  color: var(--bronze);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 0.2rem;
+}
+
+.entry-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--marble);
+  margin-bottom: 0.2rem;
+}
+
+.entry-org {
+  color: var(--stone);
+  font-size: 0.85rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.03em;
+}
+
+.entry ul {
+  color: var(--stone);
+  font-size: 0.92rem;
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+}
+
+.entry ul li {
+  margin-bottom: 0.35rem;
+}
+
+.entry ul li::marker {
+  color: var(--bronze);
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.9rem;
+}
+
+.skill-chip {
+  border: 1px solid var(--hairline);
+  padding: 0.85rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--marble);
+  letter-spacing: 0.02em;
+}
+
+.skill-chip strong {
+  color: var(--bronze-light);
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 576px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+}
+
+/* ---------- Footer ---------- */
+.footer-stoic {
+  background-color: var(--ink);
+  border-top: 1px solid var(--hairline);
+  padding: 2.6rem 0;
+  text-align: center;
+  color: var(--stone-dim);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-stoic .footer-links a {
+  color: var(--stone);
+  margin: 0 0.8rem;
+  font-size: 0.72rem;
+}
+
+/* ---------- Misc utility ---------- */
+.btn-bronze {
+  border: 1px solid var(--bronze);
+  color: var(--bronze-light);
+  background: transparent;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-bronze:hover {
+  background-color: var(--bronze);
+  color: var(--ink);
+}
+
+.container-narrow {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}

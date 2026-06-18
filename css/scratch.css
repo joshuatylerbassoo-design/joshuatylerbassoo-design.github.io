@@ -1,0 +1,260 @@
+/* =====================================================================
+   scratch.css
+   Hand-written stylesheet for the from-scratch "Patriotism" page.
+   No Bootstrap. No frameworks. Built from a blank file.
+   ===================================================================== */
+
+/* ---- Reset-ish basics ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Style #1: body sets font family, font color, and background image ---- */
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #e8e6e1;
+  background-color: #050505;
+  background-image: linear-gradient(rgba(2,2,2,0.86), rgba(2,2,2,0.86)),
+    url("https://images.unsplash.com/photo-1574202774336-44faebb2dce1?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  line-height: 1.7;
+}
+
+/* ---- Style #2: the main wrapper div, for positioning the whole page's content ---- */
+.page-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---- Style #3: font family + color for headings ---- */
+h1, h2, h3 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-bottom: 2px solid #aa1c1c;
+  padding-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #d8d4cb;
+  border-left: 4px solid #aa1c1c;
+  padding-left: 0.7rem;
+}
+
+/* ---- Header div: positions the title block + flag background ---- */
+.site-header {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #a8a39a;
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---- Style #4: navigation bar styling, custom-built (not Bootstrap) ---- */
+.scratch-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: rgba(20, 20, 20, 0.7);
+  border: 1px solid #333;
+  padding: 0.9rem 1rem;
+  margin: 2rem 0;
+}
+
+.scratch-nav a {
+  color: #cfcac0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.scratch-nav a:hover,
+.scratch-nav a:focus {
+  color: #ffffff;
+  border-bottom: 1px solid #aa1c1c;
+}
+
+/* ---- Section divs: the THREE+ divs used for positioning content blocks ---- */
+.section-block {
+  background-color: rgba(15, 15, 15, 0.78);
+  border: 1px solid #2c2c2c;
+  padding: 2.2rem 2.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-block p {
+  margin-bottom: 1rem;
+  color: #d6d2c8;
+}
+
+/* ---- Image styling ---- */
+.figure-block {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.figure-block img {
+  max-width: 100%;
+  border: 1px solid #3a3a3a;
+  filter: grayscale(100%) contrast(1.05);
+}
+
+.figure-block figcaption {
+  font-size: 0.82rem;
+  color: #8a857c;
+  margin-top: 0.6rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* ---- Lists ---- */
+.tenet-list {
+  padding-left: 1.5rem;
+}
+
+.tenet-list > li {
+  margin-bottom: 1rem;
+  color: #d6d2c8;
+}
+
+.tenet-list ul {
+  margin-top: 0.6rem;
+  padding-left: 1.4rem;
+}
+
+.tenet-list ul li {
+  margin-bottom: 0.4rem;
+  color: #b3aea4;
+  font-size: 0.96rem;
+}
+
+.tenet-list ul li::marker {
+  color: #aa1c1c;
+}
+
+.tenet-list > li::marker {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ---- On-page anchor target highlight ---- */
+#service-record {
+  scroll-margin-top: 2rem;
+}
+
+/* ---- Quote styling ---- */
+.stoic-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 2.5rem 0;
+}
+
+.stoic-quote span {
+  display: block;
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #8a857c;
+  margin-top: 0.8rem;
+}
+
+/* ---- Video + Tableau embed wrapper ---- */
+.media-block {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.media-block iframe {
+  max-width: 100%;
+  border: 1px solid #3a3a3a;
+}
+
+/* ---- Back-to-professional-site link block ---- */
+.return-block {
+  text-align: center;
+  padding: 3rem 0 4rem;
+}
+
+.return-link {
+  display: inline-block;
+  color: #050505;
+  background-color: #cfa44c;
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid #cfa44c;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.return-link:hover {
+  background-color: transparent;
+  color: #cfa44c;
+}
+
+.app-link-block {
+  text-align: center;
+  margin: 1.5rem 0 0;
+}
+
+.app-link {
+  color: #aa1c1c;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+/* ---- Footer ---- */
+.scratch-footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #6b6760;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  border-top: 1px solid #2c2c2c;
+}
+
+/* ---- Responsive tweak ---- */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  .section-block {
+    padding: 1.6rem 1.4rem;
+  }
+  .scratch-nav {
+    gap: 1rem;
+  }
+}

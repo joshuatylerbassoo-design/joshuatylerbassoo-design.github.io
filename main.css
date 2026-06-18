@@ -30,7 +30,7 @@ body {
   background-color: var(--ink);
   background-image:
     linear-gradient(rgba(10,10,10,0.93), rgba(10,10,10,0.93)),
-    url("images/flag.svg");
+    url("../images/flag.svg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
